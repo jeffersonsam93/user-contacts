@@ -9,7 +9,7 @@ import { UsersModule } from './Users/users.module';
 
 @Module({
   imports: [ServeStaticModule.forRoot({
-    rootPath: join(__dirname, '..','..', 'app','user','build'),
+    rootPath: join(__dirname, '..','..', 'app','build'),
     exclude: ['/api*','/guide'],
   }),UsersModule,SharedModule,DatabaseModule],
   controllers: [AppController],
